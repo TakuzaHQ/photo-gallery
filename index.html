@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+    figure { width: 300px; margin: 0; padding: 5px; border: 3px solid white; }
+    figure img { width: 100%; display: block; }
+    figcaption { display: none; }
+    figure.active { border-color: blue; }
+    figure.active figcaption { display: block; }
+  </style>
+</head>
+<body>
+  <h1>My Photo Gallery</h1>
+  <p>Move your mouse over a photo or tab to it to see the caption.</p>
+
+  <div class="gallery">
+    <figure onmouseover="show(this)" onmouseleave="hide(this)" onfocus="show(this)" onblur="hide(this)">
+      <img src="https://images.unsplash.com/photo-1793976665839-1874b7353363?q=80&amp;w=1412&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=NHwxMjA3fDA%3D" alt="Person seen from behind wearing a dark navy hat with a feather, standing in a dimly lit tunnel">
+      <figcaption>Man Walking with a Blue Hat</figcaption>
+    </figure>
+
+    <figure onmouseover="show(this)" onmouseleave="hide(this)" onfocus="show(this)" onblur="hide(this)">
+      <img src="https://plus.unsplash.com/premium_photo-1793698798074-55c5585ad41e?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=NHwxMjA3fDA%3D" alt="Hands holding a smartphone over the handlebars of a green vintage scooter">
+      <figcaption>delivery man using his Phone</figcaption>
+    </figure>
+
+    <figure onmouseover="show(this)" onmouseleave="hide(this)" onfocus="show(this)" onblur="hide(this)">
+      <img src="https://images.unsplash.com/photo-1794936585635-7671b9b1c642?q=80&amp;w=1170&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=NHwxMjA3fDA%3D" alt="Historic city at sunset with a large cathedral dome and a tall tower rising above the rooftops">
+      <figcaption>City at Sunset</figcaption>
+    </figure>
+
+    <figure onmouseover="show(this)" onmouseleave="hide(this)" onfocus="show(this)" onblur="hide(this)">
+      <img src="https://images.unsplash.com/photo-1794880415818-19ff7fd89920?q=80&amp;w=1032&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=NHwxMjA3fDA%3D" alt="Seattle skyline with the Space Needle and a snow-capped mountain in the distance">
+      <figcaption>Seattle Skyline</figcaption>
+    </figure>
+
+    <figure onmouseover="show(this)" onmouseleave="hide(this)" onfocus="show(this)" onblur="hide(this)">
+      <img src="https://images.unsplash.com/photo-1795041236040-80a4bb76fbbc?q=80&amp;w=1170&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=NHwxMjA3fDA%3D" alt="Young child with blond hair looking into a woven basket beside a stuffed bunny on the grass">
+      <figcaption>Child and Basket</figcaption>
+    </figure>
+
+    <figure onmouseover="show(this)" onmouseleave="hide(this)" onfocus="show(this)" onblur="hide(this)">
+      <img src="https://images.unsplash.com/photo-1795072984629-f377a5aab3f7?q=80&amp;w=1170&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=NHwxMjA3fDA%3D" alt="Sunlit room with a dark leather chair and a small round table, with bright light falling across the wall">
+      <figcaption>Sunlit Room</figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
